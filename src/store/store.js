@@ -1,0 +1,21 @@
+import { createStore, applyMiddleware, compose } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import rootReducer from './reducers';
+import rootSaga from './sagas';
+const sagaMiddleware = createSagaMiddleware(); // 创建saga中间件
+
+const composeEnhancers = compose;
+const middlewares = [sagaMiddleware];
+if (process.env.NODE_ENV === 'development') {
+    middlewares.push(require('redux-logger').createLogger());
+}
+const enhancer = composeEnhancers(
+    applyMiddleware(...middlewares)
+    // other store enhancers if any
+);
+
+export default function configStore() {
+    const store = createStore(rootReducer, enhancer);
+    sagaMiddleware.run(rootSaga); // 运行saga, 这个要放在applyMiddleware后面
+    return store;
+}

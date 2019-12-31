@@ -1,0 +1,51 @@
+{
+  "name": "temp-vue-h5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build && sh ./copy.sh",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cssnano": "^4.1.8",
+    "cssnano-preset-advanced": "^4.0.6",
+    "highlight.js": "^9.15.6",
+    "muse-ui": "^3.0.1",
+    "muse-ui-loading": "^0.2.0",
+    "muse-ui-message": "^0.2.1",
+    "muse-ui-progress": "^0.1.0",
+    "muse-ui-toast": "^0.3.0",
+    "nano": "^8.0.0",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-px-to-viewport-opt": "^0.0.4",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "quill": "^1.3.6",
+    "quill-image-resize-module": "^3.0.0",
+    "vconsole": "^3.3.0",
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "image-webpack-loader": "^4.6.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "vue-template-compiler": "^2.5.21",
+    "webpack-bundle-analyzer": "^3.0.3"
+  }
+}

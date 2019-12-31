@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" />
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+        <script src="https://g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
+        <title>temp-vue-h5</title>
+    </head>
+    <body>
+        <noscript> <strong>We're sorry but temp-vue-h5 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong> </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <script>
+            window.onload = function() {
+                // 兼容vh写法的插件
+                window.viewportUnitsBuggyfill.init({ hacks: window.viewportUnitsBuggyfillHacks });
+                // var winDPI = window.devicePixelRatio;
+                // var uAgent = window.navigator.userAgent;
+                // var screenHeight = window.screen.height;
+                // var screenWidth = window.screen.width;
+                // var winWidth = window.innerWidth;
+                // var winHeight = window.innerHeight;
+            };
+        </script>
+    </body>
+</html>
